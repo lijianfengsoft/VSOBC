@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FreeRTOS1", "FreeRTOS1.vcxproj", "{27BF6479-BBE1-4013-89CF-833E2B82C03E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|ARM = Release|ARM
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27BF6479-BBE1-4013-89CF-833E2B82C03E}.Debug|ARM.ActiveCfg = Debug|VisualGDB
+		{27BF6479-BBE1-4013-89CF-833E2B82C03E}.Debug|ARM.Build.0 = Debug|VisualGDB
+		{27BF6479-BBE1-4013-89CF-833E2B82C03E}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{27BF6479-BBE1-4013-89CF-833E2B82C03E}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{27BF6479-BBE1-4013-89CF-833E2B82C03E}.Release|ARM.ActiveCfg = Release|ARM
+		{27BF6479-BBE1-4013-89CF-833E2B82C03E}.Release|ARM.Build.0 = Release|ARM
+		{27BF6479-BBE1-4013-89CF-833E2B82C03E}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{27BF6479-BBE1-4013-89CF-833E2B82C03E}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {600770A7-BA46-41E6-9990-C176C954E106}
+	EndGlobalSection
+EndGlobal

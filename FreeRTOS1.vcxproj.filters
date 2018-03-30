@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{2a61865c-7981-46a8-864d-419af8fc1636}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{03b1ce4f-fb10-4aa4-a0ff-d2a1e0ed9e68}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{188aca3f-4d10-47be-8983-447414443d60}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{a844ddb0-ae90-4200-b2e4-b7aeeee709f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files\StdPeriph">
+      <UniqueIdentifier>{adb48289-1682-405b-9d40-2bff9b06b48e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{2729965c-9249-4a9a-8282-1779603f6ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files\StdPeriph">
+      <UniqueIdentifier>{d66d8357-4792-403b-98d8-e8696ac7da9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{3d29c8a2-7918-4cca-8eeb-e04289413016}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\FreeRTOS">
+      <UniqueIdentifier>{38f3f0a1-7c1a-47ed-a7fa-ca34d3207d98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\FreeRTOS\include">
+      <UniqueIdentifier>{74729d5c-89ff-46fa-b062-66b187ef8ca7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\FreeRTOS\portable">
+      <UniqueIdentifier>{17d1df0e-965b-46af-93f3-8f34c7072e1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\FreeRTOS\portable\MemMang">
+      <UniqueIdentifier>{329edf3e-33b5-4c0d-84bd-12b9de87b51c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\FreeRTOS\portable\RVDS">
+      <UniqueIdentifier>{232b64ea-f7f7-4a95-9391-4aaf940cb2ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\FreeRTOS\portable\RVDS\ARM_CM4F">
+      <UniqueIdentifier>{4f9bd34e-bb7e-4fc4-aac0-14524f8e388e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\FreeRTOS">
+      <UniqueIdentifier>{de5c231c-ff4b-445f-b837-e2977123ce13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\FreeRTOS\include">
+      <UniqueIdentifier>{5af178a3-037d-49f6-a46e-5a1da9c4c8c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\FreeRTOS\portable">
+      <UniqueIdentifier>{1f482632-7c0d-46d8-8d96-34fd8a0e567e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\FreeRTOS\portable\MemMang">
+      <UniqueIdentifier>{2eeeb240-4b4c-4b74-91d3-993cee719797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\FreeRTOS\portable\RVDS">
+      <UniqueIdentifier>{af727c16-b5d8-4434-a394-43b3a8972769}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\FreeRTOS\portable\RVDS\ARM_CM4F">
+      <UniqueIdentifier>{9cbecde1-e5e5-4d61-9d3f-bab1bce36931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\FATFS">
+      <UniqueIdentifier>{af6fb95a-cd5a-40b9-93ee-a672fd3ba935}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\FATFS">
+      <UniqueIdentifier>{94626a02-4b9c-4a34-82bd-67476451b620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcmd">
+      <UniqueIdentifier>{6096828d-4656-459c-930e-09e079561f75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcmd">
+      <UniqueIdentifier>{146e6138-1b7b-4ee8-9b39-0f8f0a4f8f2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\bsp_user">
+      <UniqueIdentifier>{12e4cd05-cd6e-4a60-b5c5-3a3c83d8142a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\bsp_user">
+      <UniqueIdentifier>{66ac380c-f755-4e64-a869-78fa1243ca09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\bsp_task">
+      <UniqueIdentifier>{9df31525-0b09-4770-81c0-1f9da07b1991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\bsp_task">
+      <UniqueIdentifier>{b9b346cf-5248-4056-baac-856a68c326ad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="system_stm32f4xx.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <None Include="stm32.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\StartupFiles\startup_stm32f407xx.c">
+      <Filter>Source files\Device-specific files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\misc.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_adc.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_can.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cec.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_crc.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_aes.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_des.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_tdes.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dac.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dbgmcu.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dcmi.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dfsdm.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma2d.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dsi.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash_ramfunc.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fmpi2c.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fsmc.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_md5.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_sha1.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_i2c.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_iwdg.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_lptim.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_ltdc.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_pwr.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_qspi.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rng.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rtc.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_sai.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_sdio.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spdifrx.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spi.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_syscfg.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_wwdg.c">
+      <Filter>Source files\Device-specific files\StdPeriph</Filter>
+    </ClCompile>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\misc.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cec.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dfsdm.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma2d.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dsi.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash_ramfunc.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fmc.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fmpi2c.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_lptim.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_ltdc.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_qspi.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spdifrx.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Device\ST\STM32F4xx\Include\stm32f4xx.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Device\ST\STM32F4xx\Include\system_stm32f4xx.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\arm_common_tables.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\arm_const_structs.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\arm_math.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_cm0.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_cm0plus.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_cm3.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_cm4.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_cm7.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_cmFunc.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_cmInstr.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_cmSimd.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_sc000.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_sc300.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\RTOS\Template\cmsis_os.h">
+      <Filter>Header files\Device-specific files\StdPeriph</Filter>
+    </ClInclude>
+    <None Include="FreeRTOS1-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="FreeRTOS1-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="stm32.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <ClCompile Include="FreeRTOS\croutine.c">
+      <Filter>Source files\FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\event_groups.c">
+      <Filter>Source files\FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\list.c">
+      <Filter>Source files\FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\queue.c">
+      <Filter>Source files\FreeRTOS</Filter>
+    </ClCompile>
+    <None Include="FreeRTOS\readme.txt">
+      <Filter>Source files\FreeRTOS</Filter>
+    </None>
+    <ClCompile Include="FreeRTOS\tasks.c">
+      <Filter>Source files\FreeRTOS</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\timers.c">
+      <Filter>Source files\FreeRTOS</Filter>
+    </ClCompile>
+    <None Include="FreeRTOS\portable\readme.txt">
+      <Filter>Source files\FreeRTOS\portable</Filter>
+    </None>
+    <ClCompile Include="FreeRTOS\portable\MemMang\heap_4.c">
+      <Filter>Source files\FreeRTOS\portable\MemMang</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRTOS\portable\RVDS\ARM_CM4F\port.c">
+      <Filter>Source files\FreeRTOS\portable\RVDS\ARM_CM4F</Filter>
+    </ClCompile>
+    <ClInclude Include="FreeRTOS\include\croutine.h">
+      <Filter>Header files\FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\deprecated_definitions.h">
+      <Filter>Header files\FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\event_groups.h">
+      <Filter>Header files\FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\FreeRTOS.h">
+      <Filter>Header files\FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\FreeRTOSConfig.h">
+      <Filter>Header files\FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\list.h">
+      <Filter>Header files\FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\mpu_prototypes.h">
+      <Filter>Header files\FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\mpu_wrappers.h">
+      <Filter>Header files\FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\portable.h">
+      <Filter>Header files\FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\projdefs.h">
+      <Filter>Header files\FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\queue.h">
+      <Filter>Header files\FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\semphr.h">
+      <Filter>Header files\FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\StackMacros.h">
+      <Filter>Header files\FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\task.h">
+      <Filter>Header files\FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\include\timers.h">
+      <Filter>Header files\FreeRTOS\include</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRTOS\portable\RVDS\ARM_CM4F\portmacro.h">
+      <Filter>Header files\FreeRTOS\portable\RVDS\ARM_CM4F</Filter>
+    </ClInclude>
+    <ClCompile Include="main.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="FATFS\diskio.c">
+      <Filter>Source files\FATFS</Filter>
+    </ClCompile>
+    <ClCompile Include="FATFS\ff.c">
+      <Filter>Source files\FATFS</Filter>
+    </ClCompile>
+    <ClCompile Include="FATFS\ffsystem.c">
+      <Filter>Source files\FATFS</Filter>
+    </ClCompile>
+    <ClCompile Include="FATFS\ffunicode.c">
+      <Filter>Source files\FATFS</Filter>
+    </ClCompile>
+    <ClInclude Include="FATFS\diskio.h">
+      <Filter>Header files\FATFS</Filter>
+    </ClInclude>
+    <ClInclude Include="FATFS\ff.h">
+      <Filter>Header files\FATFS</Filter>
+    </ClInclude>
+    <ClInclude Include="FATFS\ffconf.h">
+      <Filter>Header files\FATFS</Filter>
+    </ClInclude>
+    <ClInclude Include="FATFS\integer.h">
+      <Filter>Header files\FATFS</Filter>
+    </ClInclude>
+    <ClCompile Include="libcmd\cmd_dfl.c">
+      <Filter>Source files\libcmd</Filter>
+    </ClCompile>
+    <ClCompile Include="libcmd\command.c">
+      <Filter>Source files\libcmd</Filter>
+    </ClCompile>
+    <ClCompile Include="libcmd\console.c">
+      <Filter>Source files\libcmd</Filter>
+    </ClCompile>
+    <ClCompile Include="libcmd\driver_debug.c">
+      <Filter>Source files\libcmd</Filter>
+    </ClCompile>
+    <ClCompile Include="libcmd\systern.c">
+      <Filter>Source files\libcmd</Filter>
+    </ClCompile>
+    <ClInclude Include="libcmd\command.h">
+      <Filter>Header files\libcmd</Filter>
+    </ClInclude>
+    <ClInclude Include="libcmd\console.h">
+      <Filter>Header files\libcmd</Filter>
+    </ClInclude>
+    <ClInclude Include="libcmd\driver_debug.h">
+      <Filter>Header files\libcmd</Filter>
+    </ClInclude>
+    <ClInclude Include="libcmd\graduate.h">
+      <Filter>Header files\libcmd</Filter>
+    </ClInclude>
+    <ClInclude Include="libcmd\system.h">
+      <Filter>Header files\libcmd</Filter>
+    </ClInclude>
+    <ClCompile Include="bsp_user\bsp_init.c">
+      <Filter>Source files\bsp_user</Filter>
+    </ClCompile>
+    <ClCompile Include="bsp_user\sdio_sdcard.c">
+      <Filter>Source files\bsp_user</Filter>
+    </ClCompile>
+    <ClCompile Include="bsp_user\usart.c">
+      <Filter>Source files\bsp_user</Filter>
+    </ClCompile>
+    <ClInclude Include="bsp_user\bsp_init.h">
+      <Filter>Header files\bsp_user</Filter>
+    </ClInclude>
+    <ClInclude Include="bsp_user\sdio_sdcard.h">
+      <Filter>Header files\bsp_user</Filter>
+    </ClInclude>
+    <ClInclude Include="bsp_user\usart.h">
+      <Filter>Header files\bsp_user</Filter>
+    </ClInclude>
+    <ClCompile Include="bsp_user\bsp_intemp.c">
+      <Filter>Source files\bsp_user</Filter>
+    </ClCompile>
+    <ClCompile Include="bsp_user\delay.c">
+      <Filter>Source files\bsp_user</Filter>
+    </ClCompile>
+    <ClCompile Include="bsp_user\bsp_cpuflash.c">
+      <Filter>Source files\bsp_user</Filter>
+    </ClCompile>
+    <ClCompile Include="bsp_user\bsp_norflash.c">
+      <Filter>Source files\bsp_user</Filter>
+    </ClCompile>
+    <ClCompile Include="bsp_user\bsp_extsram.c">
+      <Filter>Source files\bsp_user</Filter>
+    </ClCompile>
+    <ClCompile Include="bsp_user\bsp_reset.c">
+      <Filter>Source files\bsp_user</Filter>
+    </ClCompile>
+    <ClCompile Include="bsp_user\bsp_obc_argvs_store.c">
+      <Filter>Source files\bsp_user</Filter>
+    </ClCompile>
+    <ClCompile Include="bsp_user\bsp_ds1302.c">
+      <Filter>Source files\bsp_user</Filter>
+    </ClCompile>
+    <ClCompile Include="bsp_user\bsp_ad7490.c">
+      <Filter>Source files\bsp_user</Filter>
+    </ClCompile>
+    <ClCompile Include="bsp_user\bsp_pca9665.c">
+      <Filter>Source files\bsp_user</Filter>
+    </ClCompile>
+    <ClCompile Include="bsp_task\bsp_i2c_task.c">
+      <Filter>Source files\bsp_task</Filter>
+    </ClCompile>
+    <ClCompile Include="bsp_user\bsp_hklist.c">
+      <Filter>Source files\bsp_user</Filter>
+    </ClCompile>
+    <ClCompile Include="bsp_user\bsp_hk.c">
+      <Filter>Source files\bsp_user</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <LinkerScript Include="STM32F407ZG_flash.lds">
+      <Filter>Source files</Filter>
+    </LinkerScript>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bsp_user\bsp_intemp.h">
+      <Filter>Header files\bsp_user</Filter>
+    </ClInclude>
+    <ClInclude Include="bsp_user\delay.h">
+      <Filter>Header files\bsp_user</Filter>
+    </ClInclude>
+    <ClInclude Include="bsp_user\bsp_cpuflsh.h">
+      <Filter>Header files\bsp_user</Filter>
+    </ClInclude>
+    <ClInclude Include="bsp_user\bsp_norflash.h">
+      <Filter>Header files\bsp_user</Filter>
+    </ClInclude>
+    <ClInclude Include="bsp_user\bsp_extsram.h">
+      <Filter>Header files\bsp_user</Filter>
+    </ClInclude>
+    <ClInclude Include="bsp_user\bsp_reset.h">
+      <Filter>Header files\bsp_user</Filter>
+    </ClInclude>
+    <ClInclude Include="bsp_user\bsp_obc_argvs_store.h">
+      <Filter>Header files\bsp_user</Filter>
+    </ClInclude>
+    <ClInclude Include="bsp_user\bsp_ds1302.h">
+      <Filter>Header files\bsp_user</Filter>
+    </ClInclude>
+    <ClInclude Include="bsp_user\bsp_ad7490.h">
+      <Filter>Header files\bsp_user</Filter>
+    </ClInclude>
+    <ClInclude Include="bsp_user\bsp_pca9665.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="bsp_user\error.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="bsp_task\bsp_i2c_task.h">
+      <Filter>Header files\bsp_task</Filter>
+    </ClInclude>
+    <ClInclude Include="bsp_user\bsp_hklist.h">
+      <Filter>Header files\bsp_user</Filter>
+    </ClInclude>
+    <ClInclude Include="bsp_user\bsp_hk.h">
+      <Filter>Header files\bsp_user</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

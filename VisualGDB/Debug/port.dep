@@ -1,0 +1,52 @@
+VisualGDB/Debug/port.o: FreeRTOS/portable/RVDS/ARM_CM4F/port.c \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/FreeRTOS.h \
+ h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stddef.h \
+ h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdint.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\stdint.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\_default_types.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\features.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\_newlib_version.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_intsup.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_stdint.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/FreeRTOSConfig.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/projdefs.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/portable.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/deprecated_definitions.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/portable/RVDS/ARM_CM4F/portmacro.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/mpu_wrappers.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/task.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/list.h
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/FreeRTOS.h:
+
+h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stddef.h:
+
+h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdint.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\stdint.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\_default_types.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\features.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\_newlib_version.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_intsup.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_stdint.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/FreeRTOSConfig.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/projdefs.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/portable.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/deprecated_definitions.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/portable/RVDS/ARM_CM4F/portmacro.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/mpu_wrappers.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/task.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/list.h:

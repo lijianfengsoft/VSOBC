@@ -1,0 +1,35 @@
+VisualGDB/Debug/driver_debug.o: libcmd/driver_debug.c libcmd/graduate.h \
+ libcmd/driver_debug.h libcmd/command.h \
+ h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stddef.h \
+ h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdint.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\stdint.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\_default_types.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\features.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\_newlib_version.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_intsup.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_stdint.h \
+ h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdbool.h
+
+libcmd/graduate.h:
+
+libcmd/driver_debug.h:
+
+libcmd/command.h:
+
+h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stddef.h:
+
+h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdint.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\stdint.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\_default_types.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\features.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\_newlib_version.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_intsup.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_stdint.h:
+
+h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdbool.h:

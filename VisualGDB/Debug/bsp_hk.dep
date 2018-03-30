@@ -1,0 +1,173 @@
+VisualGDB/Debug/bsp_hk.o: bsp_user/bsp_hk.c \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/FreeRTOS.h \
+ h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stddef.h \
+ h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdint.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\stdint.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\_default_types.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\features.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\_newlib_version.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_intsup.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_stdint.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/FreeRTOSConfig.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/projdefs.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/portable.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/deprecated_definitions.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/portable/RVDS/ARM_CM4F/portmacro.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/mpu_wrappers.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/task.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/list.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/semphr.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/queue.h \
+ C:/Users/li/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32F4xxxx/CMSIS_StdPeriph/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+ C:/Users/li/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32F4xxxx/CMSIS_StdPeriph/Include/core_cm4.h \
+ C:/Users/li/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32F4xxxx/CMSIS_StdPeriph/Include/core_cmInstr.h \
+ C:/Users/li/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32F4xxxx/CMSIS_StdPeriph/Include/core_cmFunc.h \
+ C:/Users/li/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32F4xxxx/CMSIS_StdPeriph/Include/core_cmSimd.h \
+ C:/Users/li/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32F4xxxx/CMSIS_StdPeriph/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\string.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\_ansi.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\newlib.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\config.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\ieeefp.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\reent.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\_ansi.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_types.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\_types.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\lock.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\cdefs.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\string.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\stdlib.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\stdlib.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\stdio.h \
+ h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdarg.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\types.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\types.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\stdio.h \
+ C:/Users/li/Desktop/VS_USARTIN/FATFS/ff.h \
+ C:/Users/li/Desktop/VS_USARTIN/FATFS/integer.h \
+ C:/Users/li/Desktop/VS_USARTIN/FATFS/ffconf.h \
+ C:/Users/li/Desktop/VS_USARTIN/libcmd/driver_debug.h \
+ C:/Users/li/Desktop/VS_USARTIN/libcmd/command.h \
+ C:/Users/li/Desktop/VS_USARTIN/libcmd/graduate.h \
+ h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdbool.h \
+ bsp_user/bsp_ds1302.h h:\vs开发stm32\sysgcc\arm-eabi\sys-include\time.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\time.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\timespec.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_timespec.h \
+ bsp_user/bsp_hk.h bsp_user/bsp_hklist.h
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/FreeRTOS.h:
+
+h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stddef.h:
+
+h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdint.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\stdint.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\_default_types.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\features.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\_newlib_version.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_intsup.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_stdint.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/FreeRTOSConfig.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/projdefs.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/portable.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/deprecated_definitions.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/portable/RVDS/ARM_CM4F/portmacro.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/mpu_wrappers.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/task.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/list.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/semphr.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/queue.h:
+
+C:/Users/li/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32F4xxxx/CMSIS_StdPeriph/Device/ST/STM32F4xx/Include/stm32f4xx.h:
+
+C:/Users/li/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32F4xxxx/CMSIS_StdPeriph/Include/core_cm4.h:
+
+C:/Users/li/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32F4xxxx/CMSIS_StdPeriph/Include/core_cmInstr.h:
+
+C:/Users/li/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32F4xxxx/CMSIS_StdPeriph/Include/core_cmFunc.h:
+
+C:/Users/li/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32F4xxxx/CMSIS_StdPeriph/Include/core_cmSimd.h:
+
+C:/Users/li/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32F4xxxx/CMSIS_StdPeriph/Device/ST/STM32F4xx/Include/system_stm32f4xx.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\string.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\_ansi.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\newlib.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\config.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\ieeefp.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\reent.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\_ansi.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_types.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\_types.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\lock.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\cdefs.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\string.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\stdlib.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\stdlib.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\stdio.h:
+
+h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdarg.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\types.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\types.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\stdio.h:
+
+C:/Users/li/Desktop/VS_USARTIN/FATFS/ff.h:
+
+C:/Users/li/Desktop/VS_USARTIN/FATFS/integer.h:
+
+C:/Users/li/Desktop/VS_USARTIN/FATFS/ffconf.h:
+
+C:/Users/li/Desktop/VS_USARTIN/libcmd/driver_debug.h:
+
+C:/Users/li/Desktop/VS_USARTIN/libcmd/command.h:
+
+C:/Users/li/Desktop/VS_USARTIN/libcmd/graduate.h:
+
+h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdbool.h:
+
+bsp_user/bsp_ds1302.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\time.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\time.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\timespec.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_timespec.h:
+
+bsp_user/bsp_hk.h:
+
+bsp_user/bsp_hklist.h:

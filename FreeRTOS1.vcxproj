@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{27BF6479-BBE1-4013-89CF-833E2B82C03E}</ProjectGuid>
+    <BSP_ID>com.sysprogs.arm.stm32</BSP_ID>
+    <BSP_VERSION>4.0</BSP_VERSION>
+    <InPlaceBSPSubdir />
+    <ProjectName>FreeRTOS1</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)stm32.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <MCUPropertyListFile>$(ProjectDir)stm32.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)stm32.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <MCUPropertyListFile>$(ProjectDir)stm32.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>6.2.0/7.12/r4</ToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>6.2.0/7.12/r4</ToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>6.2.0/7.12/r4</ToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>6.2.0/7.12/r4</ToolchainVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <CLanguageStandard>C99</CLanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\li\Desktop\VS_USARTIN\bsp_task;C:\Users\li\Desktop\VS_USARTIN\bsp_user;C:\Users\li\Desktop\VS_USARTIN\libcmd;C:\Users\li\Desktop\VS_USARTIN\FATFS;C:\Users\li\Desktop\freertos\FreeRTOS1\FreeRTOS\portable\MemMang;C:\Users\li\Desktop\freertos\FreeRTOS1\FreeRTOS\portable\RVDS\ARM_CM4F;C:\Users\li\Desktop\freertos\FreeRTOS1\FreeRTOS\include;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <LinkerScript>C:\Users\li\Desktop\VS_USARTIN\STM32F407ZG_flash.lds</LinkerScript>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <CLanguageStandard>C99</CLanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\li\Desktop\freertos\FreeRTOS1\FreeRTOS\portable\MemMang;C:\Users\li\Desktop\freertos\FreeRTOS1\FreeRTOS\portable\RVDS\ARM_CM4F;C:\Users\li\Desktop\freertos\FreeRTOS1\FreeRTOS\include;%(ClCompile.AdditionalIncludeDirectories);C:\Users\li\Desktop\VS_USARTIN\FATFS\source</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LibrarySearchDirectories>;%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>;%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <LinkerScript>
+      </LinkerScript>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <CLanguageStandard>C99</CLanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <CLanguageStandard>C99</CLanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <LinkerScript Include="STM32F407ZG_flash.lds" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="bsp_task\bsp_i2c_task.c" />
+    <ClCompile Include="bsp_user\bsp_ad7490.c" />
+    <ClCompile Include="bsp_user\bsp_cpuflash.c" />
+    <ClCompile Include="bsp_user\bsp_ds1302.c" />
+    <ClCompile Include="bsp_user\bsp_extsram.c" />
+    <ClCompile Include="bsp_user\bsp_hk.c" />
+    <ClCompile Include="bsp_user\bsp_hklist.c" />
+    <ClCompile Include="bsp_user\bsp_intemp.c" />
+    <ClCompile Include="bsp_user\bsp_norflash.c" />
+    <ClCompile Include="bsp_user\bsp_obc_argvs_store.c" />
+    <ClCompile Include="bsp_user\bsp_pca9665.c" />
+    <ClCompile Include="bsp_user\bsp_reset.c" />
+    <ClCompile Include="bsp_user\delay.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="system_stm32f4xx.c" />
+    <None Include="stm32.props" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\StartupFiles\startup_stm32f407xx.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\misc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_adc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_can.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cec.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_crc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_aes.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_des.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_cryp_tdes.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dac.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dbgmcu.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dcmi.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dfsdm.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dma2d.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_dsi.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_exti.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash_ramfunc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fmpi2c.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_fsmc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_gpio.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_md5.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_hash_sha1.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_i2c.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_iwdg.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_lptim.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_ltdc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_pwr.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_qspi.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rcc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rng.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_rtc.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_sai.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_sdio.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spdifrx.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_spi.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_syscfg.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_tim.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_usart.c" />
+    <ClCompile Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_wwdg.c" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\misc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cec.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_cryp.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dac.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dbgmcu.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dcmi.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dfsdm.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dma2d.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dsi.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash_ramfunc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fmc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fmpi2c.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_hash.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_lptim.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_ltdc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_qspi.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rng.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rtc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sai.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_sdio.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spdifrx.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_spi.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_syscfg.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_tim.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Device\ST\STM32F4xx\Include\stm32f4xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Device\ST\STM32F4xx\Include\system_stm32f4xx.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\arm_common_tables.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\arm_const_structs.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\arm_math.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_cm0.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_cm0plus.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_cm3.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_cm4.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_cm7.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_cmFunc.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_cmInstr.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_cmSimd.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_sc000.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\Include\core_sc300.h" />
+    <ClInclude Include="$(BSP_ROOT)\STM32F4xxxx\CMSIS_StdPeriph\RTOS\Template\cmsis_os.h" />
+    <None Include="FreeRTOS1-Debug.vgdbsettings" />
+    <None Include="FreeRTOS1-Release.vgdbsettings" />
+    <None Include="stm32.xml" />
+    <ClCompile Include="FreeRTOS\croutine.c" />
+    <ClCompile Include="FreeRTOS\event_groups.c" />
+    <ClCompile Include="FreeRTOS\list.c" />
+    <ClCompile Include="FreeRTOS\queue.c" />
+    <None Include="FreeRTOS\readme.txt" />
+    <ClCompile Include="FreeRTOS\tasks.c" />
+    <ClCompile Include="FreeRTOS\timers.c" />
+    <None Include="FreeRTOS\portable\readme.txt" />
+    <ClCompile Include="FreeRTOS\portable\MemMang\heap_4.c" />
+    <ClCompile Include="FreeRTOS\portable\RVDS\ARM_CM4F\port.c" />
+    <ClInclude Include="bsp_task\bsp_i2c_task.h" />
+    <ClInclude Include="bsp_user\bsp_ad7490.h" />
+    <ClInclude Include="bsp_user\bsp_cpuflsh.h" />
+    <ClInclude Include="bsp_user\bsp_ds1302.h" />
+    <ClInclude Include="bsp_user\bsp_extsram.h" />
+    <ClInclude Include="bsp_user\bsp_hk.h" />
+    <ClInclude Include="bsp_user\bsp_hklist.h" />
+    <ClInclude Include="bsp_user\bsp_intemp.h" />
+    <ClInclude Include="bsp_user\bsp_norflash.h" />
+    <ClInclude Include="bsp_user\bsp_obc_argvs_store.h" />
+    <ClInclude Include="bsp_user\bsp_pca9665.h" />
+    <ClInclude Include="bsp_user\bsp_reset.h" />
+    <ClInclude Include="bsp_user\delay.h" />
+    <ClInclude Include="bsp_user\error.h" />
+    <ClInclude Include="FreeRTOS\include\croutine.h" />
+    <ClInclude Include="FreeRTOS\include\deprecated_definitions.h" />
+    <ClInclude Include="FreeRTOS\include\event_groups.h" />
+    <ClInclude Include="FreeRTOS\include\FreeRTOS.h" />
+    <ClInclude Include="FreeRTOS\include\FreeRTOSConfig.h" />
+    <ClInclude Include="FreeRTOS\include\list.h" />
+    <ClInclude Include="FreeRTOS\include\mpu_prototypes.h" />
+    <ClInclude Include="FreeRTOS\include\mpu_wrappers.h" />
+    <ClInclude Include="FreeRTOS\include\portable.h" />
+    <ClInclude Include="FreeRTOS\include\projdefs.h" />
+    <ClInclude Include="FreeRTOS\include\queue.h" />
+    <ClInclude Include="FreeRTOS\include\semphr.h" />
+    <ClInclude Include="FreeRTOS\include\StackMacros.h" />
+    <ClInclude Include="FreeRTOS\include\task.h" />
+    <ClInclude Include="FreeRTOS\include\timers.h" />
+    <ClInclude Include="FreeRTOS\portable\RVDS\ARM_CM4F\portmacro.h" />
+    <ClCompile Include="FATFS\diskio.c" />
+    <ClCompile Include="FATFS\ff.c" />
+    <ClCompile Include="FATFS\ffsystem.c" />
+    <ClCompile Include="FATFS\ffunicode.c" />
+    <ClInclude Include="FATFS\diskio.h" />
+    <ClInclude Include="FATFS\ff.h" />
+    <ClInclude Include="FATFS\ffconf.h" />
+    <ClInclude Include="FATFS\integer.h" />
+    <ClCompile Include="libcmd\cmd_dfl.c" />
+    <ClCompile Include="libcmd\command.c" />
+    <ClCompile Include="libcmd\console.c" />
+    <ClCompile Include="libcmd\driver_debug.c" />
+    <ClCompile Include="libcmd\systern.c" />
+    <ClInclude Include="libcmd\command.h" />
+    <ClInclude Include="libcmd\console.h" />
+    <ClInclude Include="libcmd\driver_debug.h" />
+    <ClInclude Include="libcmd\graduate.h" />
+    <ClInclude Include="libcmd\system.h" />
+    <ClCompile Include="bsp_user\bsp_init.c" />
+    <ClCompile Include="bsp_user\sdio_sdcard.c" />
+    <ClCompile Include="bsp_user\usart.c" />
+    <ClInclude Include="bsp_user\bsp_init.h" />
+    <ClInclude Include="bsp_user\sdio_sdcard.h" />
+    <ClInclude Include="bsp_user\usart.h" />
+  </ItemGroup>
+</Project>
