@@ -37,6 +37,10 @@ int main()
 			        (UBaseType_t   )START_TASK_PRIO, 
 			        (TaskHandle_t* )&StartTask_Handler); 
 		vTaskStartScheduler();	
+		while (1)
+		{
+
+		}
 }
 
 void start_task(void *pvParameters)
