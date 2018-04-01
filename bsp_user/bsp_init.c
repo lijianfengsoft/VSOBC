@@ -23,8 +23,23 @@
 #include "bsp_pca9665.h"
 #include "bsp_hklist.h"
 #include "bsp_hk.h"
+#include "csp_usart.h"
 
 #include "time.h"
+
+//CSP头文件
+#include "csp.h"
+#include "csp_thread.h"
+#include "csp_if_kiss.h"
+
+#define MY_ADDRESS 1
+
+static csp_iface_t csp_if_kiss;
+static csp_kiss_handle_t csp_kiss_driver;
+
+static void my_usart_rx(uint8_t * buf, int len, void * pxTaskWoken) {
+	csp_kiss_rx(&csp_if_kiss, buf, len, pxTaskWoken);
+}
 
 void bsp_init(void)
 {
@@ -68,6 +83,22 @@ void bsp_init(void)
 	clock_set_time(&timestamp);	//设置本地时间偏移（此处时时钟节拍计数应为0）
 
 	printf("RTC Time is: %s\r\n", ctime((time_t *)&timestamp.tv_sec));
+
+	csp_buffer_init(30, 400);
+	csp_init(MY_ADDRESS);
+
+	csp_usart3_init(115200);
+	csp_kiss_init(&csp_if_kiss, &csp_kiss_driver, usart3_putc, usart_insert, "KISS"); 
+
+	usart_set_callback(my_usart_rx);
+
+	csp_route_set(1, &csp_if_kiss, CSP_NODE_MAC);
+	csp_route_set(2, &csp_if_kiss, CSP_NODE_MAC);
+	csp_route_start_task(1024 * 1, 0);
+
+	csp_conn_print_table();
+	csp_route_print_table();
+	csp_route_print_interfaces();
 
 
 	ad7490_spi_init();

@@ -58,7 +58,16 @@ VisualGDB/Debug/bsp_init.o: bsp_user/bsp_init.c \
  bsp_user/delay.h bsp_user/bsp_cpuflsh.h bsp_user/bsp_norflash.h \
  bsp_user/bsp_extsram.h bsp_user/bsp_ds1302.h bsp_user/bsp_pca9665.h \
  C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/queue.h \
- bsp_user/bsp_hklist.h bsp_user/bsp_hk.h
+ bsp_user/bsp_hklist.h bsp_user/bsp_hk.h bsp_user/csp_usart.h \
+ libcsp/include/csp/csp.h libcsp/include/csp/csp_autoconfig.h \
+ libcsp/include/csp/csp_platform.h libcsp/include/csp/csp_error.h \
+ libcsp/include/csp/csp_debug.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\inttypes.h \
+ libcsp/include/csp/csp_buffer.h libcsp/include/csp/arch/csp_thread.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/task.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/list.h \
+ libcsp/include/csp/interfaces/csp_if_kiss.h \
+ libcsp/include/csp/csp_interface.h
 
 C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/FreeRTOS.h:
 
@@ -195,3 +204,29 @@ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/queue.h:
 bsp_user/bsp_hklist.h:
 
 bsp_user/bsp_hk.h:
+
+bsp_user/csp_usart.h:
+
+libcsp/include/csp/csp.h:
+
+libcsp/include/csp/csp_autoconfig.h:
+
+libcsp/include/csp/csp_platform.h:
+
+libcsp/include/csp/csp_error.h:
+
+libcsp/include/csp/csp_debug.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\inttypes.h:
+
+libcsp/include/csp/csp_buffer.h:
+
+libcsp/include/csp/arch/csp_thread.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/task.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/list.h:
+
+libcsp/include/csp/interfaces/csp_if_kiss.h:
+
+libcsp/include/csp/csp_interface.h:

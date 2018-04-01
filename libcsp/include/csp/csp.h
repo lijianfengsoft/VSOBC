@@ -236,7 +236,7 @@ typedef struct csp_conn_s csp_conn_t;
  * Start up the can-space protocol
  * @param my_node_address The CSP node address
  */
-int csp_init(uint8_t my_node_address);
+int csp_init(unsigned char address);
 
 #define CSP_HOSTNAME_LEN	20
 /** csp_set_hostname

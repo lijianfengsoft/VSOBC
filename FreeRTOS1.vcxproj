@@ -161,7 +161,9 @@
     <ClCompile Include="bsp_user\bsp_obc_argvs_store.c" />
     <ClCompile Include="bsp_user\bsp_pca9665.c" />
     <ClCompile Include="bsp_user\bsp_reset.c" />
+    <ClCompile Include="bsp_user\csp_usart3.c" />
     <ClCompile Include="bsp_user\delay.c" />
+    <ClCompile Include="libcsp\src\arch\posix\csp_clock.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="system_stm32f4xx.c" />
     <None Include="stm32.props" />
@@ -287,6 +289,7 @@
     <ClInclude Include="bsp_user\bsp_obc_argvs_store.h" />
     <ClInclude Include="bsp_user\bsp_pca9665.h" />
     <ClInclude Include="bsp_user\bsp_reset.h" />
+    <ClInclude Include="bsp_user\csp_usart.h" />
     <ClInclude Include="bsp_user\delay.h" />
     <ClInclude Include="bsp_user\error.h" />
     <ClInclude Include="FreeRTOS\include\croutine.h" />
@@ -347,8 +350,6 @@
     <ClInclude Include="libcsp\include\csp\arch\csp_system.h" />
     <ClInclude Include="libcsp\include\csp\arch\csp_thread.h" />
     <ClInclude Include="libcsp\include\csp\arch\csp_time.h" />
-    <ClInclude Include="libcsp\include\csp\drivers\i2c.h" />
-    <ClInclude Include="libcsp\include\csp\drivers\usart.h" />
     <ClInclude Include="libcsp\include\csp\interfaces\csp_if_can.h" />
     <ClInclude Include="libcsp\include\csp\interfaces\csp_if_i2c.h" />
     <ClInclude Include="libcsp\include\csp\interfaces\csp_if_kiss.h" />

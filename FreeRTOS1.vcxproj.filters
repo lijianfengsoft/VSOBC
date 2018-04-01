@@ -756,12 +756,6 @@
     <ClInclude Include="libcsp\include\csp\arch\csp_time.h">
       <Filter>Header files\libcsp\include\csp\arch</Filter>
     </ClInclude>
-    <ClInclude Include="libcsp\include\csp\drivers\i2c.h">
-      <Filter>Header files\libcsp\include\csp\drivers</Filter>
-    </ClInclude>
-    <ClInclude Include="libcsp\include\csp\drivers\usart.h">
-      <Filter>Header files\libcsp\include\csp\drivers</Filter>
-    </ClInclude>
     <ClInclude Include="libcsp\include\csp\interfaces\csp_if_can.h">
       <Filter>Header files\libcsp\include\csp\interfaces</Filter>
     </ClInclude>
@@ -894,6 +888,12 @@
     <ClInclude Include="libcsp\include\csp\arch\pthread_queue.h">
       <Filter>Header files\libcsp\include\csp\arch</Filter>
     </ClInclude>
+    <ClCompile Include="bsp_user\csp_usart3.c">
+      <Filter>Source files\bsp_user</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\arch\posix\csp_clock.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <LinkerScript Include="STM32F407ZG_flash.lds">
@@ -951,6 +951,9 @@
     </ClInclude>
     <ClInclude Include="libcsp\src\arch\windows\windows_queue.h">
       <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="bsp_user\csp_usart.h">
+      <Filter>Source files\bsp_user</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
