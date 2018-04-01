@@ -88,6 +88,120 @@
     <Filter Include="Header files\bsp_task">
       <UniqueIdentifier>{b9b346cf-5248-4056-baac-856a68c326ad}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header files\libcsp">
+      <UniqueIdentifier>{6f8d7a43-18fe-4fc0-b670-daf8d33f4248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\examples">
+      <UniqueIdentifier>{e066b722-0941-4466-9470-84d7d777a4e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\include">
+      <UniqueIdentifier>{39485e30-829a-4a05-ae6b-3d2ff4b19480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\include\csp">
+      <UniqueIdentifier>{a1bdcc95-3160-4ce6-9787-f8b7dd9efc17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\include\csp\arch">
+      <UniqueIdentifier>{e53f5ac9-8d76-4d17-ad87-bd620e3d8c7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\include\csp\drivers">
+      <UniqueIdentifier>{24e0693c-aca0-4126-a3f3-be3d6c3ba3a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\include\csp\interfaces">
+      <UniqueIdentifier>{e4a20f29-487d-410c-863d-67b96f2f59de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\src">
+      <UniqueIdentifier>{43a2a9bd-d174-42de-8fcd-288242125c1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\src\arch">
+      <UniqueIdentifier>{cb561e65-8243-4203-98b2-eb1f50363b10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\src\arch\freertos">
+      <UniqueIdentifier>{c694c743-a29b-4ed4-8cad-c90fe844634a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\src\arch\macosx">
+      <UniqueIdentifier>{0e10b61c-8963-461a-b7de-82ef12d79e73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\src\arch\posix">
+      <UniqueIdentifier>{a962c9e3-c4b9-490c-bf97-881584a13287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\src\arch\windows">
+      <UniqueIdentifier>{ad897246-fd6a-4e05-ae47-00eaa1e5248a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\src\crypto">
+      <UniqueIdentifier>{92f2157b-9723-4cbb-874d-bca03c61538b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\src\drivers">
+      <UniqueIdentifier>{7036ff94-b2a6-4e99-b097-aad1eedc76c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\src\drivers\can">
+      <UniqueIdentifier>{2fd60c80-0cc6-4ac9-8b5e-b5c73ceb9c7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\src\drivers\usart">
+      <UniqueIdentifier>{efd528a7-2f4f-474f-bc93-c14196e96ef5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\src\interfaces">
+      <UniqueIdentifier>{db7cd91f-b515-4a28-a53a-3ce230c228ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libcsp\src\transport">
+      <UniqueIdentifier>{e5d4b7dd-5967-4f99-86f8-866a675cebd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp">
+      <UniqueIdentifier>{5909afe4-fbfc-4001-81ef-dc3e8b1042c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\examples">
+      <UniqueIdentifier>{6997b0f0-05a7-4b8b-b851-e44fb4ad41ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\include">
+      <UniqueIdentifier>{505ef002-5e3a-4699-b6d1-2130e4b4941f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\include\csp">
+      <UniqueIdentifier>{2ae125aa-dc3e-4b1b-bc8e-8d8ccc64c905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\include\csp\arch">
+      <UniqueIdentifier>{0ffab01d-51a3-474c-a392-c93832307d81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\include\csp\drivers">
+      <UniqueIdentifier>{3d9a9736-9e49-4c3f-9645-c35782e22e71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\include\csp\interfaces">
+      <UniqueIdentifier>{63b12fe6-9958-401c-9a89-1d9d0f798753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\src">
+      <UniqueIdentifier>{bc2c39d8-5ac2-447e-a1b6-c3c5c0bd1e56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\src\arch">
+      <UniqueIdentifier>{62c7caff-67ac-4440-beb4-df3d08ec7f79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\src\arch\freertos">
+      <UniqueIdentifier>{fd3e2e40-1555-4eb0-a007-8f4cf302ea75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\src\arch\macosx">
+      <UniqueIdentifier>{d4a16090-2f26-42da-8b47-0d5e913f4896}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\src\arch\posix">
+      <UniqueIdentifier>{066dbe66-6644-4b0a-9642-f2abea0d73b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\src\arch\windows">
+      <UniqueIdentifier>{a9a61877-2774-4fdb-9760-c97587ebcf26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\src\crypto">
+      <UniqueIdentifier>{d2eff31b-4de8-414d-93c4-1c3da42491bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\src\drivers">
+      <UniqueIdentifier>{bb7fe23f-a8c0-41e1-8285-8c510d2e0244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\src\drivers\can">
+      <UniqueIdentifier>{a5edeca8-90f2-4a15-a9a4-9b42fe07f9e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\src\drivers\usart">
+      <UniqueIdentifier>{5306149b-e0c6-44e8-913a-d8d593c2c770}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\src\interfaces">
+      <UniqueIdentifier>{8134c4e4-31f5-4d38-b9f3-12e9db6eb992}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libcsp\src\transport">
+      <UniqueIdentifier>{4f7ed4e1-d55f-42f6-9b06-5af346243c7a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="system_stm32f4xx.c">
@@ -588,6 +702,198 @@
     <ClCompile Include="bsp_user\bsp_hk.c">
       <Filter>Source files\bsp_user</Filter>
     </ClCompile>
+    <ClInclude Include="libcsp\at91sam7.h">
+      <Filter>Header files\libcsp</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\csp_autoconfig.h">
+      <Filter>Header files\libcsp</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\csp.h">
+      <Filter>Header files\libcsp\include\csp</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\csp_buffer.h">
+      <Filter>Header files\libcsp\include\csp</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\csp_cmp.h">
+      <Filter>Header files\libcsp\include\csp</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\csp_crc32.h">
+      <Filter>Header files\libcsp\include\csp</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\csp_debug.h">
+      <Filter>Header files\libcsp\include\csp</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\csp_endian.h">
+      <Filter>Header files\libcsp\include\csp</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\csp_error.h">
+      <Filter>Header files\libcsp\include\csp</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\csp_interface.h">
+      <Filter>Header files\libcsp\include\csp</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\csp_platform.h">
+      <Filter>Header files\libcsp\include\csp</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\arch\csp_clock.h">
+      <Filter>Header files\libcsp\include\csp\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\arch\csp_malloc.h">
+      <Filter>Header files\libcsp\include\csp\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\arch\csp_queue.h">
+      <Filter>Header files\libcsp\include\csp\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\arch\csp_semaphore.h">
+      <Filter>Header files\libcsp\include\csp\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\arch\csp_system.h">
+      <Filter>Header files\libcsp\include\csp\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\arch\csp_thread.h">
+      <Filter>Header files\libcsp\include\csp\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\arch\csp_time.h">
+      <Filter>Header files\libcsp\include\csp\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\drivers\i2c.h">
+      <Filter>Header files\libcsp\include\csp\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\drivers\usart.h">
+      <Filter>Header files\libcsp\include\csp\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\interfaces\csp_if_can.h">
+      <Filter>Header files\libcsp\include\csp\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\interfaces\csp_if_i2c.h">
+      <Filter>Header files\libcsp\include\csp\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\interfaces\csp_if_kiss.h">
+      <Filter>Header files\libcsp\include\csp\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\interfaces\csp_if_lo.h">
+      <Filter>Header files\libcsp\include\csp\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\src\csp_conn.h">
+      <Filter>Header files\libcsp\src</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\src\csp_io.h">
+      <Filter>Header files\libcsp\src</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\src\csp_port.h">
+      <Filter>Header files\libcsp\src</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\src\csp_route.h">
+      <Filter>Header files\libcsp\src</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\src\crypto\csp_hmac.h">
+      <Filter>Header files\libcsp\src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\src\crypto\csp_sha1.h">
+      <Filter>Header files\libcsp\src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\src\crypto\csp_xtea.h">
+      <Filter>Header files\libcsp\src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\src\drivers\can\can_at90can128.h">
+      <Filter>Header files\libcsp\src\drivers\can</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\src\drivers\can\can_at91sam7a1.h">
+      <Filter>Header files\libcsp\src\drivers\can</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\src\drivers\can\can_at91sam7a3.h">
+      <Filter>Header files\libcsp\src\drivers\can</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\src\transport\csp_transport.h">
+      <Filter>Header files\libcsp\src\transport</Filter>
+    </ClInclude>
+    <ClCompile Include="libcsp\src\csp_buffer.c">
+      <Filter>Source files\libcsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\csp_conn.c">
+      <Filter>Source files\libcsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\csp_crc32.c">
+      <Filter>Source files\libcsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\csp_debug.c">
+      <Filter>Source files\libcsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\csp_endian.c">
+      <Filter>Source files\libcsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\csp_io.c">
+      <Filter>Source files\libcsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\csp_port.c">
+      <Filter>Source files\libcsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\csp_route.c">
+      <Filter>Source files\libcsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\csp_services.c">
+      <Filter>Source files\libcsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\csp_service_handler.c">
+      <Filter>Source files\libcsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\csp_sfp.c">
+      <Filter>Source files\libcsp\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\arch\freertos\csp_malloc.c">
+      <Filter>Source files\libcsp\src\arch\freertos</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\arch\freertos\csp_queue.c">
+      <Filter>Source files\libcsp\src\arch\freertos</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\arch\freertos\csp_semaphore.c">
+      <Filter>Source files\libcsp\src\arch\freertos</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\arch\freertos\csp_system.c">
+      <Filter>Source files\libcsp\src\arch\freertos</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\arch\freertos\csp_thread.c">
+      <Filter>Source files\libcsp\src\arch\freertos</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\arch\freertos\csp_time.c">
+      <Filter>Source files\libcsp\src\arch\freertos</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\crypto\csp_hmac.c">
+      <Filter>Source files\libcsp\src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\crypto\csp_sha1.c">
+      <Filter>Source files\libcsp\src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\crypto\csp_xtea.c">
+      <Filter>Source files\libcsp\src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\interfaces\csp_if_can.c">
+      <Filter>Source files\libcsp\src\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\interfaces\csp_if_i2c.c">
+      <Filter>Source files\libcsp\src\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\interfaces\csp_if_kiss.c">
+      <Filter>Source files\libcsp\src\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\interfaces\csp_if_lo.c">
+      <Filter>Source files\libcsp\src\interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\transport\csp_rdp.c">
+      <Filter>Source files\libcsp\src\transport</Filter>
+    </ClCompile>
+    <ClCompile Include="libcsp\src\transport\csp_udp.c">
+      <Filter>Source files\libcsp\src\transport</Filter>
+    </ClCompile>
+    <ClInclude Include="libcsp\include\csp\csp_autoconfig.h">
+      <Filter>Header files\libcsp\include\csp</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\csp_types.h">
+      <Filter>Header files\libcsp\include\csp</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\include\csp\arch\pthread_queue.h">
+      <Filter>Header files\libcsp\include\csp\arch</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <LinkerScript Include="STM32F407ZG_flash.lds">
@@ -636,6 +942,15 @@
     </ClInclude>
     <ClInclude Include="bsp_user\bsp_hk.h">
       <Filter>Header files\bsp_user</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\src\arch\posix\pthread_queue.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\src\arch\windows\windows_glue.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="libcsp\src\arch\windows\windows_queue.h">
+      <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

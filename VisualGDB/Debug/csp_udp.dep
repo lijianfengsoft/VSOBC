@@ -1,0 +1,121 @@
+VisualGDB/Debug/csp_udp.o: libcsp/src/transport/csp_udp.c \
+ libcsp/include/csp/csp.h \
+ h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdint.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\stdint.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\_default_types.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\features.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\_newlib_version.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_intsup.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_stdint.h \
+ libcsp/include/csp/csp_autoconfig.h \
+ h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdbool.h \
+ libcsp/include/csp/csp_platform.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/FreeRTOS.h \
+ h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stddef.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/FreeRTOSConfig.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/projdefs.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/portable.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/deprecated_definitions.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/portable/RVDS/ARM_CM4F/portmacro.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/mpu_wrappers.h \
+ libcsp/include/csp/csp_error.h libcsp/include/csp/csp_debug.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\inttypes.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\newlib.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\config.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\ieeefp.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\string.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\_ansi.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\reent.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\_ansi.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_types.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\_types.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\lock.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\cdefs.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\string.h \
+ libcsp/include/csp/csp_buffer.h libcsp/include/csp/arch/csp_queue.h \
+ libcsp/src/csp_port.h libcsp/src/csp_conn.h \
+ libcsp/include/csp/arch/csp_semaphore.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/semphr.h \
+ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/queue.h
+
+libcsp/include/csp/csp.h:
+
+h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdint.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\stdint.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\_default_types.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\features.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\_newlib_version.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_intsup.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_stdint.h:
+
+libcsp/include/csp/csp_autoconfig.h:
+
+h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdbool.h:
+
+libcsp/include/csp/csp_platform.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/FreeRTOS.h:
+
+h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stddef.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/FreeRTOSConfig.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/projdefs.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/portable.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/deprecated_definitions.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/portable/RVDS/ARM_CM4F/portmacro.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/mpu_wrappers.h:
+
+libcsp/include/csp/csp_error.h:
+
+libcsp/include/csp/csp_debug.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\inttypes.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\newlib.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\config.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\ieeefp.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\string.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\_ansi.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\reent.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\_ansi.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_types.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\_types.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\lock.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\cdefs.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\string.h:
+
+libcsp/include/csp/csp_buffer.h:
+
+libcsp/include/csp/arch/csp_queue.h:
+
+libcsp/src/csp_port.h:
+
+libcsp/src/csp_conn.h:
+
+libcsp/include/csp/arch/csp_semaphore.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/semphr.h:
+
+C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/queue.h:
