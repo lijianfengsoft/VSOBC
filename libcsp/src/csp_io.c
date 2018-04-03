@@ -45,6 +45,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 #include "csp_route.h"
 #include "csp_transport.h"
 
+#include "usart.h"
+
 /** Static local variables */
 unsigned char my_address;
 
@@ -199,7 +201,7 @@ csp_packet_t * csp_read(csp_conn_t * conn, uint32_t timeout) {
 }
 
 int csp_send_direct(csp_id_t idout, csp_packet_t * packet, uint32_t timeout) {
-						//(conn->idout, packet, timeout)
+						
 	if (packet == NULL) {
 		csp_log_error("csp_send_direct called with NULL packet\r\n");
 		goto err;
@@ -212,7 +214,7 @@ int csp_send_direct(csp_id_t idout, csp_packet_t * packet, uint32_t timeout) {
 		goto err;
 	}
 
-	csp_log_packet("Output: Src %u, Dst %u, Dport %u, Sport %u, Pri %u, Flags 0x%02X, Size %u VIA: %s\r\n",
+	printf("Output: Src %u, Dst %u, Dport %u, Sport %u, Pri %u, Flags 0x%02X, Size %u VIA: %s\r\n",
 		idout.src, idout.dst, idout.dport, idout.sport, idout.pri, idout.flags, packet->length, ifout->interface->name);
 
 #ifdef CSP_USE_PROMISC

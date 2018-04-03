@@ -51,7 +51,13 @@ VisualGDB/Debug/csp_io.o: libcsp/src/csp_io.c \
  libcsp/include/csp/arch/csp_time.h libcsp/include/csp/arch/csp_malloc.h \
  libcsp/src/crypto/csp_hmac.h libcsp/src/crypto/csp_xtea.h \
  libcsp/src/csp_io.h libcsp/src/csp_port.h libcsp/src/csp_conn.h \
- libcsp/src/csp_route.h libcsp/src/transport/csp_transport.h
+ libcsp/src/csp_route.h libcsp/src/transport/csp_transport.h \
+ C:/Users/li/Desktop/VS_USARTIN/bsp_user/usart.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\stat.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\time.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\time.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\timespec.h \
+ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_timespec.h
 
 h:\vs开发stm32\sysgcc\arm-eabi\sys-include\stdio.h:
 
@@ -178,3 +184,15 @@ libcsp/src/csp_conn.h:
 libcsp/src/csp_route.h:
 
 libcsp/src/transport/csp_transport.h:
+
+C:/Users/li/Desktop/VS_USARTIN/bsp_user/usart.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\stat.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\time.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\time.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\timespec.h:
+
+h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\_timespec.h:

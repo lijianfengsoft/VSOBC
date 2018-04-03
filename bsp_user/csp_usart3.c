@@ -9,11 +9,14 @@
 #include "queue.h"
 #include "task.h"
 
+#include "csp.h"
 #include "csp_debug.h"
 #include "csp_usart.h"
+#include "csp_thread.h"
 #include "usart.h"
 
 #define MAX_RECEIVE 235
+#define PORT 10
 
 static xQueueHandle USART_REC;
 static usart_callback_t usart_callback = NULL;
@@ -74,12 +77,17 @@ void usart3_putc(char c) {
 	while (USART_GetFlagStatus(USART3, USART_FLAG_TC) == RESET);
 }
 
-void usart_set_callback(usart_callback_t callback) {
+void usart_set_callback(usart_callback_t callback)
+{
 	usart_callback = callback;
 }
 
-void usart_insert(char c, void * pxTaskWoken) {
-	printf("%c", c);
+void usart_insert(char c, void * pxTaskWoken)
+{
+	if (pxTaskWoken == NULL)
+		xQueueSendToBack(USART_REC, &c, 0);
+	else
+		xQueueSendToBackFromISR(USART_REC, &c, pxTaskWoken);
 }
 
 static void usart3_rx_task(void *vptr_args)
@@ -88,16 +96,16 @@ static void usart3_rx_task(void *vptr_args)
 	static uint8_t * cbuf = NULL;
 	uint8_t *ptr = NULL;
 
-	if ((cbuf = (uint8_t *)pvPortMalloc(1000)) == NULL)
-	{
-		printf("malloc failed\r\n");
-	}
-
 	while (1) {
 
 		length = uxQueueMessagesWaiting(USART_REC);
 		ptr = cbuf;
 		count = length;
+		if ((cbuf = (uint8_t *)pvPortMalloc(1000)) == NULL)
+		{
+			printf("malloc failed\r\n");
+		}
+
 		//printf("length is:%u\r\n",length);
 		while (count--)
 		{
@@ -109,6 +117,7 @@ static void usart3_rx_task(void *vptr_args)
 			usart_callback(cbuf, (unsigned int)length, (void *)NULL);
 
 		//	my_usart_rx(cbuf,length,NULL);
+		vPortFree(cbuf);
 
 		vTaskDelay(100);
 	}
@@ -125,4 +134,64 @@ void USART3_IRQHandler(void)
 		//printf( "%c", ch );    //将接受到的数据直接返回打印
 		xQueueSendFromISR(USART_REC, &ch, 0);
 	}
+}
+
+
+CSP_DEFINE_TASK(task_client)
+{
+	char *outbuf = "a-hello world";
+	char inbuf[100] = { 0 };
+	int result;
+
+	while (1)
+	{
+
+		result = csp_ping(1, 2000, 100, CSP_O_NONE);
+			printf("Client: Ping result %d [ms]\r\n", result);
+			csp_sleep_ms(1000);
+
+
+
+		/*csp_ps(MY_ADDRESS, 1000);
+		csp_sleep_ms(1000);
+		csp_memfree(MY_ADDRESS, 1000);
+		csp_sleep_ms(1000);
+		csp_buf_free(MY_ADDRESS, 1000);
+		csp_sleep_ms(1000);
+		csp_uptime(MY_ADDRESS, 1000);
+		csp_sleep_ms(1000);
+		*/
+
+
+
+		//to port10
+		/*csp_sleep_ms(1000);
+		outbuf = "a-hello world";
+		csp_transaction(0, 2, PORT, 1000, outbuf, strlen(outbuf), inbuf, 2);
+		printf("\r\n");
+		printf("10 -Quit response from server: %s\r\n", inbuf);
+		memset(inbuf, 0, sizeof(inbuf));
+		//to port11
+		csp_sleep_ms(1000);
+		outbuf = "b-hello world";
+		csp_transaction(0, 2, 11, 1000, outbuf, strlen(outbuf), inbuf, 2);
+		printf("\r\n");
+		printf("11 -Quit response from server: %s\r\n", inbuf);
+		memset(inbuf, 0, sizeof(inbuf));
+
+		//to port12
+		csp_sleep_ms(1000);
+		outbuf = "c-hello world";
+		csp_transaction(0, 2, 12, 1000, outbuf, strlen(outbuf), inbuf, 2);
+		printf("\r\n");
+		printf("12 -Quit response from server: %s\r\n", inbuf);
+		memset(inbuf, 0, sizeof(inbuf));
+
+		csp_sleep_ms(2000);
+		csp_transaction(0, 2, 11, 1000, outbuf, strlen(outbuf), inbuf, 2);
+		printf("11- Quit response from server: %s\n", inbuf);*/
+	}
+
+
+	return CSP_TASK_RETURN;
 }

@@ -239,7 +239,7 @@ void csp_kiss_init(csp_iface_t * csp_iface, csp_kiss_handle_t * csp_kiss_handle,
 	}
 
 	/* Register device handle as member of interface */
-	csp_iface->driver = csp_kiss_handle;  //csp_kiss_handle_t csp_kiss1_driver
+	csp_iface->driver = csp_kiss_handle;  
 	csp_kiss_handle->kiss_discard = kiss_discard_f;  //usart1_insert
 	csp_kiss_handle->kiss_putc = kiss_putc_f;  //usart1_putc
 	csp_kiss_handle->rx_packet = NULL;

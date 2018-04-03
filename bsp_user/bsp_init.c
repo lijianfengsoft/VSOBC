@@ -84,17 +84,19 @@ void bsp_init(void)
 
 	printf("RTC Time is: %s\r\n", ctime((time_t *)&timestamp.tv_sec));
 
-	csp_buffer_init(30, 400);
+	csp_buffer_init(10, 300);
 	csp_init(MY_ADDRESS);
 
 	csp_usart3_init(115200);
-	csp_kiss_init(&csp_if_kiss, &csp_kiss_driver, usart3_putc, usart_insert, "KISS"); 
 
 	usart_set_callback(my_usart_rx);
+	csp_kiss_init(&csp_if_kiss, &csp_kiss_driver, usart3_putc, usart_insert, "KISS"); 
 
-	csp_route_set(1, &csp_if_kiss, CSP_NODE_MAC);
+	
+
 	csp_route_set(2, &csp_if_kiss, CSP_NODE_MAC);
-	csp_route_start_task(1024 * 1, 0);
+	csp_route_set(CSP_DEFAULT_ROUTE, &csp_if_kiss, 32);
+	csp_route_start_task(1024 * 1, 3);
 
 	csp_conn_print_table();
 	csp_route_print_table();
@@ -102,7 +104,7 @@ void bsp_init(void)
 
 
 	ad7490_spi_init();
-	AD7490_Read();
+	//AD7490_Read();
 
 	PCA9665_IO_Init();
 	i2c_init(0, I2C_MASTER, 0x1A, 400 , 5, 5, NULL);

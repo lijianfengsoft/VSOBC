@@ -187,7 +187,7 @@ int csp_route_table_init(void) {
 	csp_route_set(my_address, &csp_if_lo, CSP_NODE_MAC);
 
 	/* Also register loopback as default, until user redefines default route */
-	csp_route_set(CSP_DEFAULT_ROUTE, &csp_if_lo, CSP_NODE_MAC);
+	csp_route_set(CSP_DEFAULT_ROUTE, &csp_if_lo, 32);
 
 	return CSP_ERR_NONE;
 
@@ -387,13 +387,10 @@ CSP_DEFINE_TASK(csp_task_router) {
 
 int csp_route_start_task(unsigned int task_stack_size, unsigned int priority) {
 
-
-
-
 	int ret = csp_thread_create(csp_task_router, (signed char *) "RTE", task_stack_size, NULL, priority, &handle_router);
 
 	if (ret != 0) {
-		csp_log_error("Failed to start router task\n");//mark by wl
+		csp_log_error("Failed to start router task\n");
 		return CSP_ERR_NOMEM;
 	}
 
@@ -434,7 +431,7 @@ void csp_route_add_if(csp_iface_t *ifc) {
 }
 
 int csp_route_set(uint8_t node, csp_iface_t *ifc, uint8_t nexthop_mac_addr) {
-					//(my_address, &csp_if_lo, CSP_NODE_MAC)0xFF
+				
 	/* Don't add nothing */
 	if (ifc == NULL)
 		return CSP_ERR_INVAL;

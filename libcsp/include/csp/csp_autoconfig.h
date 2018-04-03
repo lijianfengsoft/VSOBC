@@ -16,7 +16,7 @@
 #define CSP_USE_XTEA 1
 /* #undef CSP_USE_PROMISC */
 #define CSP_USE_QOS 1
-#define CSP_CONN_MAX 20//amend by wl  orignal is 20
+#define CSP_CONN_MAX 20
 #define CSP_CONN_QUEUE_LENGTH 50
 #define CSP_FIFO_INPUT 10
 #define CSP_MAX_BIND_PORT 31

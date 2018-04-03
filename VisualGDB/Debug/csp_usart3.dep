@@ -29,6 +29,9 @@ VisualGDB/Debug/csp_usart3.o: bsp_user/csp_usart3.c \
  C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/queue.h \
  C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/task.h \
  C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/list.h \
+ libcsp/include/csp/csp.h libcsp/include/csp/csp_autoconfig.h \
+ h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdbool.h \
+ libcsp/include/csp/csp_platform.h libcsp/include/csp/csp_error.h \
  libcsp/include/csp/csp_debug.h \
  h:\vs开发stm32\sysgcc\arm-eabi\sys-include\inttypes.h \
  h:\vs开发stm32\sysgcc\arm-eabi\sys-include\newlib.h \
@@ -43,9 +46,9 @@ VisualGDB/Debug/csp_usart3.o: bsp_user/csp_usart3.c \
  h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\lock.h \
  h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\cdefs.h \
  h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\string.h \
- h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdbool.h \
- bsp_user/csp_usart.h bsp_user/usart.h \
- h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\stat.h \
+ libcsp/include/csp/csp_buffer.h libcsp/include/csp/csp_debug.h \
+ bsp_user/csp_usart.h libcsp/include/csp/arch/csp_thread.h \
+ bsp_user/usart.h h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\stat.h \
  h:\vs开发stm32\sysgcc\arm-eabi\sys-include\time.h \
  h:\vs开发stm32\sysgcc\arm-eabi\sys-include\machine\time.h \
  h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\types.h \
@@ -113,6 +116,16 @@ C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/task.h:
 
 C:/Users/li/Desktop/freertos/FreeRTOS1/FreeRTOS/include/list.h:
 
+libcsp/include/csp/csp.h:
+
+libcsp/include/csp/csp_autoconfig.h:
+
+h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdbool.h:
+
+libcsp/include/csp/csp_platform.h:
+
+libcsp/include/csp/csp_error.h:
+
 libcsp/include/csp/csp_debug.h:
 
 h:\vs开发stm32\sysgcc\arm-eabi\sys-include\inttypes.h:
@@ -141,9 +154,13 @@ h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\cdefs.h:
 
 h:\vs开发stm32\sysgcc\arm-eabi\sys-include\sys\string.h:
 
-h:\vs开发stm32\sysgcc\lib\gcc\arm-eabi\6.2.0\include\stdbool.h:
+libcsp/include/csp/csp_buffer.h:
+
+libcsp/include/csp/csp_debug.h:
 
 bsp_user/csp_usart.h:
+
+libcsp/include/csp/arch/csp_thread.h:
 
 bsp_user/usart.h:
 

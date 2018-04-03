@@ -26,3 +26,5 @@ void usart_insert(char c, void *pxTaskWoken);
 void usart3_putc(char c);
 
 void csp_usart3_init(uint32_t bound);
+
+CSP_DEFINE_TASK(task_client);

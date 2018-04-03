@@ -5,8 +5,8 @@
 #include "console.h"
 #include "command.h"
 #include "bsp_i2c_task.h"
-
-
+#include "csp_thread.h"
+#include "csp_usart.h"
 
 
 #define START_TASK_PRIO  1					//开始任务优先级
@@ -18,13 +18,65 @@ void start_task(void *pvParameters);		//开始任务实体函数声明
 #define DEBUG_STK_SIZE  130*4				//调试任务堆栈
 TaskHandle_t DebugTask_Handler;             //调试任务句柄
 
-#define I2CSLAVE_TASK_PRIO  3					//I2C从机任务优先级
+#define I2CSLAVE_TASK_PRIO  2					//I2C从机任务优先级
 #define I2CSLAVE_STK_SIZE  130*4				//I2C从机任务堆栈
 TaskHandle_t I2CslaveTask_Handler;             //I2C从机任务句柄
 
-#define I2CMASTER_TASK_PRIO  3					//I2C主机任务优先级
+#define I2CMASTER_TASK_PRIO  2					//I2C主机任务优先级
 #define I2CMASTER_STK_SIZE  130*4				//I2C主机任务堆栈
 TaskHandle_t I2CmasterTask_Handler;             //I2C主机任务句柄
+
+#define CSP_TASK_CLINET_PRIO 3
+#define CLINER_STK_SIZE		130*10
+csp_thread_handle_t	handle_client;
+
+
+CSP_DEFINE_TASK(task_server) {
+	int running = 1;
+	csp_socket_t *socket = csp_socket(CSP_SO_NONE);
+	csp_conn_t *conn;
+	csp_packet_t *packet;
+	csp_packet_t *response;
+
+	response = csp_buffer_get(sizeof(csp_packet_t) + 2);
+	if (response == NULL) {
+		return CSP_TASK_RETURN;
+	}
+	response->data[0] = 'O';
+	response->data[1] = 'K';
+	response->length = 2;
+
+	csp_bind(socket, CSP_ANY);
+	csp_listen(socket, 5);
+
+	printf("Server task started\r\n");
+
+	while (running) {
+		if ((conn = csp_accept(socket, 10000)) == NULL) {
+			continue;
+		}
+
+		while ((packet = csp_read(conn, 100)) != NULL) {
+			switch (csp_conn_dport(conn)) {
+			case 11:
+				if (packet->data[0] == 'q')
+					running = 0;
+				csp_buffer_free(packet);
+				csp_send(conn, response, 1000);
+				break;
+			default:
+				csp_service_handler(conn, packet);
+				break;
+			}
+		}
+
+		csp_close(conn);
+	}
+
+	csp_buffer_free(response);
+
+	return CSP_TASK_RETURN;
+}
 
 int main()
 {
@@ -68,6 +120,19 @@ void start_task(void *pvParameters)
 				(UBaseType_t	)I2CSLAVE_TASK_PRIO,
 				(TaskHandle_t*	)&I2CslaveTask_Handler);
 
+	csp_thread_create((TaskFunction_t			)task_client, 
+					  (const signed char * const)"CLINET", 
+					  (unsigned short			)CLINER_STK_SIZE, 
+	  				  (void *					)NULL, 
+					  (unsigned int				)CSP_TASK_CLINET_PRIO, 
+					  (csp_thread_handle_t *	)&handle_client);
+
+	csp_thread_create((TaskFunction_t			)task_server,
+					 (const signed char * const)"CLINET",
+					 (unsigned short			)CLINER_STK_SIZE,
+					 (void *					)NULL,
+					 (unsigned int				)CSP_TASK_CLINET_PRIO,
+					 (csp_thread_handle_t *		)&handle_client);
 	vTaskDelete(StartTask_Handler);
 	taskEXIT_CRITICAL();
 }
