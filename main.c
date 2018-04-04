@@ -30,6 +30,9 @@ TaskHandle_t I2CmasterTask_Handler;             //I2C主机任务句柄
 #define CLINER_STK_SIZE		130*10
 csp_thread_handle_t	handle_client;
 
+#define CSP_TASK_CLINET_PRIO 3
+#define CLINER_STK_SIZE		130*10
+csp_thread_handle_t	handle_server;
 
 CSP_DEFINE_TASK(task_server) {
 	int running = 1;
@@ -132,7 +135,7 @@ void start_task(void *pvParameters)
 					 (unsigned short			)CLINER_STK_SIZE,
 					 (void *					)NULL,
 					 (unsigned int				)CSP_TASK_CLINET_PRIO,
-					 (csp_thread_handle_t *		)&handle_client);
+					 (csp_thread_handle_t *		)&handle_server);
 	vTaskDelete(StartTask_Handler);
 	taskEXIT_CRITICAL();
 }
