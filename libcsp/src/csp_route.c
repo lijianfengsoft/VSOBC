@@ -1,4 +1,4 @@
-/*
+﻿/*
 Cubesat Space Protocol - A small network-layer protocol designed for Cubesats
 Copyright (C) 2012 GomSpace ApS (http://www.gomspace.com)
 Copyright (C) 2012 AAUSAT3 Project (http://aausat3.space.aau.dk) 
@@ -274,16 +274,16 @@ CSP_DEFINE_TASK(csp_task_router) {
 		/* If the message is not to me, route the message to the correct interface */
 		if ((packet->id.dst != my_address) && (packet->id.dst != CSP_BROADCAST_ADDR)) {
 
-			/* Find the destination interface */
+			/* 通过数据包中的目的节点寻找发送的路由（包括接口和mac地址） */
 			dst = csp_route_if(packet->id.dst);
 
-			/* If the message resolves to the input interface, don't loop it back out */
+			/* 如果找到的发送接口为输入接口，则不要将其循环回去 */
 			if ((dst == NULL) || ((dst->interface == input.interface) && (input.interface->split_horizon_off == 0))) {
 				csp_buffer_free(packet);
 				continue;
 			}
 
-			/* Otherwise, actually send the message */
+			/* 直接将数据包通过发送接口发送出去 */
 			if (csp_send_direct(packet->id, packet, 0) != CSP_ERR_NONE) {
 				csp_log_warn("Router failed to send\r\n");
 				csp_buffer_free(packet);
@@ -294,10 +294,10 @@ CSP_DEFINE_TASK(csp_task_router) {
 
 		}
 
-		/* The message is to me, search for incoming socket */
+		/* 如果消息时给本节点的，则通过传入数据包的目的端口查找套接字 */
 		socket = csp_port_get_socket(packet->id.dport);
 
-		/* If the socket is connection-less, deliver now */
+		/* 如果查到的socket的选项是无连接类型的，则直接将传入的packet放入socket队列中 */
 		if (socket && (socket->opts & CSP_SO_CONN_LESS)) { 
 			if (csp_route_security_check(socket->opts, input.interface, packet) < 0) {
 				csp_buffer_free(packet);
@@ -311,14 +311,14 @@ CSP_DEFINE_TASK(csp_task_router) {
 			continue;
 		}
 
-		/* Search for an existing connection */
-		conn = csp_conn_find(packet->id.ext, CSP_ID_CONN_MASK); //(CSP_ID_SRC_MASK | CSP_ID_DST_MASK | CSP_ID_DPORT_MASK | CSP_ID_SPORT_MASK)
+		/* 查到的socket选项是有连接的，则先查找已经存在的匹配的连接 */
+		conn = csp_conn_find(packet->id.ext, CSP_ID_CONN_MASK); 
 
-		/* If this is an incoming packet on a new connection */
+		/* 如果该输入数据包是一个新的连接 */
 		if (conn == NULL)
 		{
 
-			/* Reject packet if no matching socket is found */
+			/*拒绝没有匹配的套接字的数据包*/
 			if (!socket) {
 				csp_buffer_free(packet);
 				continue;
@@ -330,7 +330,7 @@ CSP_DEFINE_TASK(csp_task_router) {
 				continue;
 			}
 
-			/* New incoming connection accepted */
+			/* 新的传入连接被接受 创建一个本节点的输出标识*/
 			csp_id_t idout;
 			idout.pri   = packet->id.pri;
 			idout.src   = my_address;
@@ -340,7 +340,7 @@ CSP_DEFINE_TASK(csp_task_router) {
 			idout.sport = packet->id.dport;
 			idout.flags = packet->id.flags;
 
-			/* Create connection */
+			/* 建立两节点之间的连接 */
 			conn = csp_conn_new(packet->id, idout);
 
 			if (!conn) {
@@ -353,7 +353,7 @@ CSP_DEFINE_TASK(csp_task_router) {
 			conn->socket = socket->socket;
 			conn->opts = socket->opts;
 
-		/* Packet to existing connection */
+		/* 数据包通过已经存在的连接传输 */
 		} else {
 
 			/* Run security check on incoming packet */
@@ -364,7 +364,7 @@ CSP_DEFINE_TASK(csp_task_router) {
 
 		}
 
-		/* Pass packet to the right transport module */
+		/* 通过正确的模块来传递数据包*/
 		if (packet->id.flags & CSP_FRDP) {
 #ifdef CSP_USE_RDP
 			csp_rdp_new_packet(conn, packet);

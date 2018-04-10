@@ -9,30 +9,30 @@
 #include "csp_usart.h"
 
 
-#define START_TASK_PRIO  1					//开始任务优先级
-#define START_STK_SIZE  128					//开始任务堆栈
-TaskHandle_t StartTask_Handler;             //开始任务句柄
-void start_task(void *pvParameters);		//开始任务实体函数声明
+#define START_TASK_PRIO  1						//开始任务优先级
+#define START_STK_SIZE  128						//开始任务堆栈
+TaskHandle_t StartTask_Handler;					//开始任务句柄
+void start_task(void *pvParameters);			//开始任务实体函数声明
 
-#define DEBUG_TASK_PRIO  4					//调试任务优先级
-#define DEBUG_STK_SIZE  130*4				//调试任务堆栈
-TaskHandle_t DebugTask_Handler;             //调试任务句柄
+#define DEBUG_TASK_PRIO  4						//调试任务优先级
+#define DEBUG_STK_SIZE  130*4					//调试任务堆栈
+TaskHandle_t DebugTask_Handler;					//调试任务句柄
 
 #define I2CSLAVE_TASK_PRIO  2					//I2C从机任务优先级
 #define I2CSLAVE_STK_SIZE  130*4				//I2C从机任务堆栈
-TaskHandle_t I2CslaveTask_Handler;             //I2C从机任务句柄
+TaskHandle_t I2CslaveTask_Handler;				//I2C从机任务句柄
 
 #define I2CMASTER_TASK_PRIO  2					//I2C主机任务优先级
 #define I2CMASTER_STK_SIZE  130*4				//I2C主机任务堆栈
 TaskHandle_t I2CmasterTask_Handler;             //I2C主机任务句柄
 
-#define CSP_TASK_CLINET_PRIO 3
-#define CLINER_STK_SIZE		130*10
-csp_thread_handle_t	handle_client;
+#define CSP_TASK_CLINET_PRIO 3					//CSP客户端任务优先级
+#define CLINER_STK_SIZE		130*10				//CSP客户端任务堆栈
+csp_thread_handle_t	handle_client;				//CSP客户端任务句柄
 
-#define CSP_TASK_CLINET_PRIO 3
-#define CLINER_STK_SIZE		130*10
-csp_thread_handle_t	handle_server;
+#define CSP_TASK_CLINET_PRIO 3					//CSP服务器任务优先级
+#define CLINER_STK_SIZE		130*10				//CSP服务器任务堆栈
+csp_thread_handle_t	handle_server;				//CSP服务器任务句柄
 
 CSP_DEFINE_TASK(task_server) {
 	int running = 1;

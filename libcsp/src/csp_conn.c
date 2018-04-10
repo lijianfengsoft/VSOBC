@@ -164,7 +164,7 @@ csp_conn_t * csp_conn_find(uint32_t id, uint32_t mask) {
 
 	for (i = 0; i < CSP_CONN_MAX; i++) {
 		conn = &arr_conn[i];
-		if ((conn->state != CONN_CLOSED) && (conn->type == CONN_CLIENT) && (conn->idin.ext & mask) == (id & mask))
+		if ((conn->state != CONN_CLOSED) && (conn->type == CONN_CLIENT) && (conn->idin.ext & mask) == (id & mask))//掩码的作用是使输入的dport和数据包中的dport要相同
 			return conn;
 	}
 	

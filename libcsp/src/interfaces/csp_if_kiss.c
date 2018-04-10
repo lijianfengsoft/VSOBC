@@ -1,4 +1,4 @@
-/*
+﻿/*
 Cubesat Space Protocol - A small network-layer protocol designed for Cubesats
 Copyright (C) 2012 GomSpace ApS (http://www.gomspace.com)
 Copyright (C) 2012 AAUSAT3 Project (http://aausat3.space.aau.dk) 
@@ -63,8 +63,14 @@ static int csp_kiss_tx(csp_iface_t * interface, csp_packet_t * packet, uint32_t 
 
 	/* Transmit data */
 	csp_kiss_handle_t * driver = interface->driver;
+	/*首先插入分隔符，然后是消息类型*/
 	driver->kiss_putc(FEND); //0xC0
 	driver->kiss_putc(TNC_DATA); //0x00
+
+	 /* 将数据中与分隔符相同的字符进行编码
+			 FEND 0xC0 --> FESC 0xDB TFEND 0xDC
+			 FESC 0xDB --> FESC 0xDB TFESC 0xDD
+	 */
 	for (unsigned int i = 0; i < packet->length; i++) {
 		if (((unsigned char *) &packet->id.ext)[i] == FEND) {
 			((unsigned char *) &packet->id.ext)[i] = TFEND;
@@ -245,7 +251,7 @@ void csp_kiss_init(csp_iface_t * csp_iface, csp_kiss_handle_t * csp_kiss_handle,
 	csp_kiss_handle->rx_packet = NULL;
 	csp_kiss_handle->rx_mode = KISS_MODE_NOT_STARTED;
 
-	/* Setop other mandatories */
+	/* Setup other mandatories */
 	csp_iface->mtu = KISS_MTU;  //256
 	csp_iface->nexthop = csp_kiss_tx;
 	csp_iface->name = name;

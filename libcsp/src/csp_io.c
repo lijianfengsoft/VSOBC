@@ -1,4 +1,4 @@
-/*
+﻿/*
 Cubesat Space Protocol - A small network-layer protocol designed for Cubesats
 Copyright (C) 2012 GomSpace ApS (http://www.gomspace.com)
 Copyright (C) 2012 AAUSAT3 Project (http://aausat3.space.aau.dk) 
@@ -139,8 +139,8 @@ csp_socket_t * csp_socket(uint32_t opts) {
 	if (sock == NULL)
 		return NULL;
 
-	/* If connectionless, init the queue to a pre-defined size
-	 * if not, the user must init the queue using csp_listen */
+	/* 如果socket是无连接的则给socket创建队列，用以接收packet
+	 * 如果不是无连接，则利用 csp_listen函数初始化接收队列，用来接收连接 */
 	if (opts & CSP_SO_CONN_LESS) {
 		sock->socket = csp_queue_create(CSP_CONN_QUEUE_LENGTH, sizeof(csp_packet_t *));
 		if (sock->socket == NULL)
@@ -225,7 +225,7 @@ int csp_send_direct(csp_id_t idout, csp_packet_t * packet, uint32_t timeout) {
 	}
 #endif
 
-	/* Only encrypt packets from the current node */
+	/* 只加密来自当前节点的数据包*/
 	if (idout.src == my_address) {
 		/* Append HMAC */
 		if (idout.flags & CSP_FHMAC) {
@@ -286,18 +286,21 @@ int csp_send_direct(csp_id_t idout, csp_packet_t * packet, uint32_t timeout) {
 	/* Copy identifier to packet */
 	packet->id.ext = idout.ext;
 
-	/* Store length before passing to interface */
+	/* 在传输到接口之前先获取数据包长度 */
 	uint16_t bytes = packet->length;
 	uint16_t mtu = ifout->interface->mtu;
 
 	if (mtu > 0 && bytes > mtu)
 		goto tx_err;
 
+	/*开始调用发送接口中的nexthop函数进行发送*/
 	if ((*ifout->interface->nexthop)(ifout->interface, packet, timeout) != CSP_ERR_NONE)
 		goto tx_err;
 
+	/*更新发送接口发送数据包数和字节数*/
 	ifout->interface->tx++;
 	ifout->interface->txbytes += bytes;
+
 	return CSP_ERR_NONE;
 
 tx_err:
